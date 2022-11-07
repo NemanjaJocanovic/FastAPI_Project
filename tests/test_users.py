@@ -4,11 +4,11 @@ from jose import jwt
 from app.config import settings
 
 
-def test_root(client):
-    res = client.get("/")
-    print(res.json().get("Hello"))
-    assert res.json().get("Hello") == "Everyone!"
-    assert res.status_code == 200
+# def test_root(client):
+#     res = client.get("/")
+#     print(res.json().get("Hello"))
+#     assert res.json().get("Hello") == "Everyone!"
+#     assert res.status_code == 200
 
 
 def test_create_user(client):
